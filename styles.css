@@ -1,0 +1,314 @@
+/* ==========================================================================
+   WordOrb Obsidian Plugin — Styles
+   Version: 1.0.0
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Word Detail Modal
+   -------------------------------------------------------------------------- */
+
+.wordorb-word-header {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.wordorb-word-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.wordorb-ipa {
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.wordorb-pos {
+    display: inline-block;
+    font-size: 0.75rem;
+    background: var(--background-modifier-hover);
+    color: var(--text-accent);
+    padding: 0.1em 0.5em;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+.wordorb-def {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.wordorb-etym {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
+    background: var(--background-secondary);
+    border-radius: 6px;
+}
+
+.wordorb-langs {
+    margin-top: 0.75rem;
+}
+
+.wordorb-langs > strong {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0.35rem;
+}
+
+.wordorb-langs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.wordorb-langs li {
+    font-size: 0.85rem;
+    background: var(--background-secondary);
+    padding: 0.2em 0.6em;
+    border-radius: 4px;
+}
+
+.wordorb-footer {
+    margin-top: 1.5rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--background-modifier-border);
+    text-align: right;
+    font-size: 0.75rem;
+}
+
+.wordorb-footer a {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+.wordorb-footer a:hover {
+    color: var(--text-accent);
+}
+
+/* --------------------------------------------------------------------------
+   Lesson Modal
+   -------------------------------------------------------------------------- */
+
+.wordorb-meta {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.wordorb-badge {
+    font-size: 0.75rem;
+    background: var(--background-secondary);
+    border: 1px solid var(--background-modifier-border);
+    padding: 0.15em 0.5em;
+    border-radius: 4px;
+    color: var(--text-muted);
+}
+
+.wordorb-tabs {
+    display: flex;
+    border-bottom: 2px solid var(--background-modifier-border);
+    margin-bottom: 0;
+    gap: 0;
+}
+
+.wordorb-tab {
+    flex: 1;
+    padding: 0.6rem 0.5rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    text-align: center;
+    font-family: inherit;
+    transition: color 0.15s, border-color 0.15s;
+}
+
+.wordorb-tab:hover {
+    color: var(--text-accent);
+}
+
+.wordorb-tab--active {
+    color: var(--text-accent);
+    border-bottom-color: var(--text-accent);
+}
+
+.wordorb-panel {
+    display: none;
+    padding: 1rem 0;
+    line-height: 1.7;
+}
+
+.wordorb-panel--active {
+    display: block;
+}
+
+/* --------------------------------------------------------------------------
+   Quiz Modal
+   -------------------------------------------------------------------------- */
+
+.wordorb-progress {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.wordorb-prompt {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.wordorb-choices {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.wordorb-choice {
+    display: block;
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    border: 2px solid var(--background-modifier-border);
+    border-radius: 6px;
+    background: var(--background-primary);
+    color: var(--text-normal);
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-align: left;
+    font-family: inherit;
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.wordorb-choice:hover {
+    border-color: var(--text-accent);
+    background: var(--background-secondary);
+}
+
+.wordorb-choice--correct {
+    border-color: var(--text-success, #16a34a) !important;
+    background: rgba(22, 163, 74, 0.08) !important;
+}
+
+.wordorb-choice--incorrect {
+    border-color: var(--text-error, #dc2626) !important;
+    background: rgba(220, 38, 38, 0.08) !important;
+}
+
+.wordorb-choice--disabled {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.wordorb-explanation {
+    margin-top: 0.75rem;
+    padding: 0.6rem 0.75rem;
+    background: var(--background-secondary);
+    border-left: 3px solid var(--text-accent);
+    border-radius: 0 6px 6px 0;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.wordorb-explanation p {
+    margin: 0;
+}
+
+.wordorb-quiz-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+
+.wordorb-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--background-modifier-border);
+    background: var(--background-primary);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    color: var(--text-normal);
+}
+
+.wordorb-btn:hover {
+    border-color: var(--text-accent);
+    background: var(--background-secondary);
+}
+
+.wordorb-btn:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.wordorb-score {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.wordorb-score h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.wordorb-score-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-accent);
+}
+
+/* --------------------------------------------------------------------------
+   Inline Link Styling
+   -------------------------------------------------------------------------- */
+
+.wordorb-inline {
+    border-bottom: 1px dashed var(--text-accent);
+    color: var(--text-accent);
+    cursor: pointer;
+    padding-bottom: 1px;
+}
+
+.wordorb-inline:hover {
+    border-bottom-style: solid;
+}
+
+/* --------------------------------------------------------------------------
+   Error State
+   -------------------------------------------------------------------------- */
+
+.wordorb-error {
+    color: var(--text-error, #dc2626);
+    font-size: 0.9rem;
+}
+
+/* --------------------------------------------------------------------------
+   Settings
+   -------------------------------------------------------------------------- */
+
+.wordorb-settings-test {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--background-modifier-border);
+}
+
+.wordorb-settings-test p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
