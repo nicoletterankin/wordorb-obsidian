@@ -3,8 +3,8 @@
     "name": "WordOrb Vocabulary",
     "version": "1.0.0",
     "minAppVersion": "1.0.0",
-    "description": "Look up words, generate vocabulary notes, insert word cards, and take quizzes. Powered by the WordOrb API (162K words, 47 languages, 226K lessons).",
-    "author": "Lesson of the Day PBC",
+    "description": "Look up words from WordOrb.ai — definitions, IPA, translations across 47 languages, etymology, and audio.",
+    "author": "Nicolette Rankin",
     "authorUrl": "https://wordorb.ai",
     "isDesktopOnly": false
 }
