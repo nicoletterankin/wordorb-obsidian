@@ -148,7 +148,7 @@ class WordOrbSettingTab extends obsidian.PluginSettingTab {
 
     new obsidian.Setting(containerEl)
       .setName("API Key")
-      .setDesc("Get your free key at wordorb.ai (50 lookups/day free)")
+      .setDesc("Get a key at wordorb.ai (10,000 lookups/day, no card needed)")
       .addText((text) =>
         text
           .setPlaceholder("sk-...")
@@ -214,7 +214,7 @@ class WordOrbSettingTab extends obsidian.PluginSettingTab {
     );
 
     const footer = containerEl.createEl("p", {
-      text: "Free tier: 50 lookups/day. Upgrade at wordorb.ai for more.",
+      text: "Your key includes 10,000 lookups/day. See wordorb.ai/pricing for more.",
     });
     footer.style.cssText = "font-size: 0.85em; color: var(--text-muted); margin-top: 1em;";
   }
