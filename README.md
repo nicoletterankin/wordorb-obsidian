@@ -1,6 +1,6 @@
-# WordOrb Vocabulary -- Obsidian Plugin
+# Word Orb Vocabulary -- Obsidian Plugin
 
-Look up words, generate vocabulary notes, insert word cards, and take quizzes directly inside Obsidian. Powered by the WordOrb API (162K words, 47 languages, 226K lessons).
+Look up words, generate vocabulary notes, insert word cards, and take quizzes directly inside Obsidian. Powered by the Word Orb API (162K words, 47 languages, 226K lessons).
 
 ## Features
 
@@ -19,7 +19,7 @@ Look up words, generate vocabulary notes, insert word cards, and take quizzes di
 
 1. Open Obsidian Settings.
 2. Go to **Community plugins** and click **Browse**.
-3. Search for "WordOrb Vocabulary".
+3. Search for "Word Orb Vocabulary".
 4. Click **Install**, then **Enable**.
 5. Go to the plugin settings and enter your API key.
 
@@ -34,7 +34,7 @@ Look up words, generate vocabulary notes, insert word cards, and take quizzes di
 
 | Setting | Default | Description |
 |---------|---------|-------------|
-| API Key | -- | Your WordOrb API key (starts with `wo_`) |
+| API Key | -- | Your Word Orb API key (starts with `wo_`) |
 | Default Tone | neutral | Tone for word lookups |
 | Preferred Languages | es,fr,de,ja | Languages to show in word cards and notes |
 | Daily Note Word of Day | Off | Auto-append today's word to your daily note |
@@ -46,12 +46,12 @@ All commands are available via `Ctrl+P` (or `Cmd+P`):
 
 | Command | Description |
 |---------|-------------|
-| WordOrb: Look up word | Open search modal |
-| WordOrb: Look up selected word | Look up the word under cursor / selection |
-| WordOrb: Insert word card | Insert a callout block into your note |
-| WordOrb: Generate vocabulary note | Create a full vocabulary note file |
-| WordOrb: Show daily word | Open today's lesson |
-| WordOrb: Take a vocabulary quiz | Start an interactive quiz |
+| Word Orb: Look up word | Open search modal |
+| Word Orb: Look up selected word | Look up the word under cursor / selection |
+| Word Orb: Insert word card | Insert a callout block into your note |
+| Word Orb: Generate vocabulary note | Create a full vocabulary note file |
+| Word Orb: Show daily word | Open today's lesson |
+| Word Orb: Take a vocabulary quiz | Start an interactive quiz |
 
 ## Wikilink Syntax
 
